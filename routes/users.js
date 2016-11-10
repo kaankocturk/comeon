@@ -27,7 +27,11 @@ router.post('/register', function(req, res, next) {
   //   favoriteColor: 'white'
   // }
 };
-
+/*
+application not defined
+view link to see how to set up application
+https://api.stormpath.com/ui2/index.html#/quickstart/none/nodejs/backend/project-type/existing
+*/
 application.createAccount(account, function(err, createdAccount) {
   console.log('Account:', createdAccount);
 });
